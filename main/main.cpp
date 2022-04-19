@@ -7,7 +7,7 @@ struct Person {
 };
 
 namespace List {
-
+    Person* root = 0;
 }
 
 int main()
