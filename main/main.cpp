@@ -16,9 +16,25 @@ namespace List {
 
 }
 
-}
 
 int main()
 {
 }
 
+namespace przestrzen {
+    Person* Create() {
+
+    }
+    void Add(Person* stara) {
+
+    }
+    void Show() {
+
+    }
+    void Remove() {
+
+    }
+    unsigned int Size() {
+
+    }
+}
