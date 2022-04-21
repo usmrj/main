@@ -5,7 +5,6 @@ struct Person {
     char* surname;
     Person* next;
 };
-
 namespace List {
     Person* root = 0;
     Person* Create();
@@ -19,11 +18,37 @@ namespace List {
 
 int main()
 {
+    bool go_on = 1;
+    while (go_on){
+        unsigned int wybor;
+        std::cout << "Menu:\n1. Dodaj\n2. Wyswietl\n3. Rozmiar \n4. Usun \n0. Wyjscie";
+        std::cin >> wybor;
+        switch (wybor)
+        {
+        case 0:
+            break;
+        case 1:
+            List::Add(List::Create());
+            break;
+        case 2:
+            List::Show();
+            break;
+        case 3:
+            std::cout << "rozmiar osoby:" << List::Size();
+            break;
+        case 4:
+            List::Remove();
+            break;
+        default:
+            break;
+        }
+    }
+
 }
 
-namespace przestrzen {
+namespace List {
     Person* Create() {
-
+        return 0;
     }
     void Add(Person* stara) {
 
@@ -36,5 +61,6 @@ namespace przestrzen {
     }
     unsigned int Size() {
 
+        return 0 ;
     }
 }
